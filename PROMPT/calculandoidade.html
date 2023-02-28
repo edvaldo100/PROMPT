@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROMPT CALCULANDO IDADE</title>
+</head>
+
+<body>
+     <script>
+        var anoNascimento = prompt('DIGITE SEU ANO DE NASCIMENTO!')
+
+        var anoAtual = prompt('DIGITE ANO ATUAL')
+
+        if(anoAtual > 2023){
+
+            alert('DIGITE UM ANO VALIDO!')
+            anoAtual = prompt('DIGITE ANO ATUAL')
+        }
+
+        var idadeFinal = anoAtual - anoNascimento
+
+        alert('SUA IDADE É :'+idadeFinal)
+
+
+     </script>
+</body>
+</html>

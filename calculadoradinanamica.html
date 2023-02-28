@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora dinamica com prompt</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt('DIGITE UM NUMÉRO!')
+
+        var sinal = prompt('DIGITE UMA OPERAÇÃO!')
+
+        if(sinal != '-' && sinal != '+' && sinal != '/'  && sinal != '*'){
+            alert('DIGITE UMA OPERAÇÃO VALIDA!')
+
+            sinal = prompt('DIGITE UMA OPERAÇÃO!')
+
+        }
+        var n2 = prompt('DIGITE OUTRO NUMÉRO!')
+
+        var n1 = Number(n1)
+        var n2 = Number(n2)
+        
+        var resultadoFinal = 0
+
+       
+
+        if(sinal == '-'){
+            resultadoFinal = n1 - n2
+        } if(sinal == '+'){
+            resultadoFinal = n1 + n2
+        }if(sinal == '/'){
+            resultadoFinal = n1 / n2
+        }if(sinal == '*'){
+            resultadoFinal = n1 * n2
+        }
+
+
+        alert('A SOMA É :'+resultadoFinal)
+    </script>
+    
+</body>
+</html>
